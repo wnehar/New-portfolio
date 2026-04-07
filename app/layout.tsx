@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio Voitures",
+  title: "William NEHAR",
   description: "Portfolio centré sur la location de voitures, avec animations et intégration du site.",
 };
 

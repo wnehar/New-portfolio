@@ -1,7 +1,7 @@
 import type { Project } from "./components/ProjectsSection";
 
 export const SITE = {
-  name: "Portfolio Voitures",
+  name: "William NEHAR",
   roleLine: "Location de voiture - expérience + propreté",
   heroTitleA: "Ton portfolio",
   heroTitleB: "voiture",
