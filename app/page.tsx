@@ -1,4 +1,4 @@
-import Image from "next/image";
+import HeroScrollVideo from "./components/HeroScrollVideo";
 
 export default function Home() {
   return (
@@ -17,35 +17,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative min-h-[90vh] overflow-hidden flex items-center justify-center text-center">
-        <div className="absolute inset-0">
-          <Image
-            src="/hero-reference.png"
-            alt="Supercar background"
-            fill
-            priority
-            className="object-cover scale-110 blur-[2px] brightness-[0.45]"
-          />
-          <div className="absolute inset-0 bg-black/78" />
-        </div>
-
-        <div className="relative z-10 px-6">
-          <p className="text-xs md:text-sm tracking-[0.45em] text-zinc-300">PORTFOLIO 2025</p>
-          <h1 className="mt-5 text-6xl sm:text-7xl md:text-8xl font-black leading-[0.92] uppercase">
-            William
-            <span className="block text-red-500">Nehar</span>
-          </h1>
-          <p className="mt-6 text-zinc-300 text-lg max-w-3xl mx-auto">
-            Étudiant à l&apos;Eugenia School - Expert Marketing Digital - Passionné d&apos;Automobile
-          </p>
-          <a
-            href="#experience"
-            className="mt-10 inline-flex rounded-xl bg-red-600 px-9 py-4 text-sm font-bold tracking-widest uppercase hover:bg-red-500 transition-colors"
-          >
-            Démarrer le moteur
-          </a>
-        </div>
-      </section>
+      <HeroScrollVideo />
 
       <section id="experience" className="max-w-6xl mx-auto px-6 py-20">
         <p className="text-red-500 text-xs tracking-[0.35em] text-center uppercase font-semibold">L&apos;accélération</p>
