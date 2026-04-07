@@ -24,9 +24,9 @@ export default function Home() {
             alt="Supercar background"
             fill
             priority
-            className="object-cover"
+            className="object-cover scale-110 blur-[2px] brightness-[0.45]"
           />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/78" />
         </div>
 
         <div className="relative z-10 px-6">
