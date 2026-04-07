@@ -2,7 +2,8 @@ import HeroScrollVideo from "./components/HeroScrollVideo";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#060606] text-white">
+    <main className="relative min-h-screen bg-[#060606] text-white">
+      <HeroScrollVideo />
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#060606]/85 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="text-sm font-black tracking-wider">
@@ -17,13 +18,30 @@ export default function Home() {
         </div>
       </header>
 
-      <HeroScrollVideo />
+      <section className="relative min-h-[90vh] flex items-center justify-center text-center px-6">
+        <div className="relative z-10">
+          <p className="text-xs md:text-sm tracking-[0.45em] text-zinc-300">PORTFOLIO 2025</p>
+          <h1 className="mt-5 text-6xl sm:text-7xl md:text-8xl font-black leading-[0.92] uppercase">
+            William
+            <span className="block text-red-500">Nehar</span>
+          </h1>
+          <p className="mt-6 text-zinc-300 text-lg max-w-3xl mx-auto">
+            Étudiant à l&apos;Eugenia School - Expert Marketing Digital - Passionné d&apos;Automobile
+          </p>
+          <a
+            href="#experience"
+            className="mt-10 inline-flex rounded-xl bg-red-600 px-9 py-4 text-sm font-bold tracking-widest uppercase hover:bg-red-500 transition-colors"
+          >
+            Démarrer le moteur
+          </a>
+        </div>
+      </section>
 
       <section id="experience" className="max-w-6xl mx-auto px-6 py-20">
         <p className="text-red-500 text-xs tracking-[0.35em] text-center uppercase font-semibold">L&apos;accélération</p>
         <h2 className="mt-2 text-center text-5xl md:text-6xl font-black">Expérience</h2>
 
-        <div className="mt-10 rounded-3xl border border-red-500/30 bg-zinc-950 p-7 md:p-9 shadow-[0_0_50px_-20px_rgba(239,68,68,0.85)]">
+        <div className="mt-10 rounded-3xl border border-red-500/30 bg-zinc-950/85 backdrop-blur-[1px] p-7 md:p-9 shadow-[0_0_50px_-20px_rgba(239,68,68,0.85)]">
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
               <h3 className="text-3xl font-bold">Actif Digital</h3>
@@ -100,7 +118,7 @@ export default function Home() {
           ].map((p) => (
             <article
               key={p.t}
-              className={`rounded-2xl border bg-zinc-950 p-6 transition-all hover:-translate-y-0.5 ${
+              className={`rounded-2xl border bg-zinc-950/85 backdrop-blur-[1px] p-6 transition-all hover:-translate-y-0.5 ${
                 p.highlight
                   ? "border-red-500/40 shadow-[0_0_35px_-16px_rgba(239,68,68,0.85)]"
                   : "border-white/10"
@@ -119,7 +137,7 @@ export default function Home() {
       <section id="contact" className="max-w-6xl mx-auto px-6 pb-24">
         <h2 className="text-center text-5xl md:text-6xl font-black">Contact</h2>
 
-        <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-zinc-950 p-8">
+        <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-zinc-950/85 backdrop-blur-[1px] p-8">
           <form className="space-y-5">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
