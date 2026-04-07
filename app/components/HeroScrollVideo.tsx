@@ -74,9 +74,9 @@ export default function HeroScrollVideo() {
         preload="auto"
         poster="/hero-reference.png"
       />
-      <div className="absolute inset-0 bg-black/72" />
+      <div className="absolute inset-0 bg-black/20" />
       {/* Masque la marque en bas-gauche présente dans la vidéo source */}
-      <div className="absolute left-0 bottom-0 w-52 h-16 bg-gradient-to-r from-black via-black/95 to-transparent" />
+      <div className="absolute left-0 bottom-0 w-52 h-16 bg-gradient-to-r from-black/55 via-black/35 to-transparent" />
     </div>
   );
 }

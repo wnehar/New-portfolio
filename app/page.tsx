@@ -41,7 +41,7 @@ export default function Home() {
         <p className="text-red-500 text-xs tracking-[0.35em] text-center uppercase font-semibold">L&apos;accélération</p>
         <h2 className="mt-2 text-center text-5xl md:text-6xl font-black">Expérience</h2>
 
-        <div className="mt-10 rounded-3xl border border-red-500/30 bg-zinc-950/85 backdrop-blur-[1px] p-7 md:p-9 shadow-[0_0_50px_-20px_rgba(239,68,68,0.85)]">
+        <div className="mt-10 rounded-3xl border border-red-500/30 bg-zinc-950/45 backdrop-blur-[1px] p-7 md:p-9 shadow-[0_0_50px_-20px_rgba(239,68,68,0.85)]">
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
               <h3 className="text-3xl font-bold">Actif Digital</h3>
@@ -118,7 +118,7 @@ export default function Home() {
           ].map((p) => (
             <article
               key={p.t}
-              className={`rounded-2xl border bg-zinc-950/85 backdrop-blur-[1px] p-6 transition-all hover:-translate-y-0.5 ${
+              className={`rounded-2xl border bg-zinc-950/45 backdrop-blur-[1px] p-6 transition-all hover:-translate-y-0.5 ${
                 p.highlight
                   ? "border-red-500/40 shadow-[0_0_35px_-16px_rgba(239,68,68,0.85)]"
                   : "border-white/10"
@@ -137,7 +137,7 @@ export default function Home() {
       <section id="contact" className="max-w-6xl mx-auto px-6 pb-24">
         <h2 className="text-center text-5xl md:text-6xl font-black">Contact</h2>
 
-        <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-zinc-950/85 backdrop-blur-[1px] p-8">
+        <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-zinc-950/45 backdrop-blur-[1px] p-8">
           <form className="space-y-5">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
