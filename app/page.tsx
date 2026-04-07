@@ -2,7 +2,7 @@ import HeroScrollVideo from "./components/HeroScrollVideo";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#060606] text-white">
+    <main className="relative z-10 min-h-screen text-white">
       <HeroScrollVideo />
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#060606]/85 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
