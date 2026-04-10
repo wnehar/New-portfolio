@@ -73,8 +73,6 @@ export default function HeroScrollVideo() {
         playsInline
         preload="auto"
       />
-      <div className="absolute inset-0 bg-black/0" />
-      <div className="absolute left-0 bottom-0 w-64 h-20 bg-black/95" />
     </div>
   );
 }

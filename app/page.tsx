@@ -3,7 +3,7 @@ import IntroLoader from "./components/IntroLoader";
 
 export default function Home() {
   return (
-    <main className="relative z-10 bg-black min-h-screen text-white">
+    <main className="relative z-10 min-h-screen text-white">
       {/* L'écran d'introduction avec le logo BMW */}
       <IntroLoader />
 
