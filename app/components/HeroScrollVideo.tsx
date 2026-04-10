@@ -33,10 +33,10 @@ export default function HeroScrollVideo() {
       const duration = durationRef.current;
       if (duration) {
         const targetTime = targetProgressRef.current * duration;
-        const next = currentTimeRef.current + (targetTime - currentTimeRef.current) * 0.12;
+        const next = currentTimeRef.current + (targetTime - currentTimeRef.current) * 0.05;
         currentTimeRef.current = next;
 
-        if (Math.abs(video.currentTime - next) > 0.008) {
+        if (Math.abs(video.currentTime - next) > 0.04) {
           video.currentTime = next;
         }
       }
