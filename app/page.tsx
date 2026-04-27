@@ -1,7 +1,20 @@
+"use client";
+import { useState } from "react";
+import FPSScene from "./components/FPSScene";
+import UIOverlay from "./components/UIOverlay";
+
+interface HitInfo {
+  title: string;
+  text: string;
+}
+
 export default function Home() {
+  const [hitInfo, setHitInfo] = useState<HitInfo | null>(null);
+
   return (
-    <main className="min-h-screen bg-black text-white p-8">
-      <h1>Nouveau Portfolio</h1>
+    <main className="w-screen h-screen overflow-hidden bg-black relative">
+      <UIOverlay hitInfo={hitInfo} />
+      <FPSScene setHitInfo={setHitInfo} />
     </main>
   );
 }
