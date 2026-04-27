@@ -23,7 +23,7 @@ export default function Target({ position, rotation = [0, 0, 0], id, label, info
   const [isHit, setIsHit] = useState(false);
 
   // Animation de bascule
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!group.current) return;
     const targetRotationX = isHit ? -Math.PI / 2 + 0.1 : 0;
     group.current.rotation.x = MathUtils.damp(group.current.rotation.x, targetRotationX, 10, delta);

@@ -9,7 +9,7 @@ export default function Player({ addSparks }: { addSparks: (pos: THREE.Vector3) 
   const raycaster = useRef(new THREE.Raycaster());
 
   useEffect(() => {
-    const handleMouseClick = (e: MouseEvent) => {
+    const handleMouseClick = () => {
       // Ne tirer que si le curseur est verrouillé
       if (document.pointerLockElement !== document.body) return;
 

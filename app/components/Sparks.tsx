@@ -19,7 +19,7 @@ export default function Sparks({ position }: { position: THREE.Vector3 }) {
     }));
   });
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!group.current) return;
     particles.forEach((p, i) => {
       p.life -= delta * 2; // Réduit la vie au fur et à mesure
